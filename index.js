@@ -30,8 +30,5 @@ app.put('/updateUser/:id', dbApi.updateUser)
 app.delete('/deleteUser/:id', dbApi.deleteUser)
 
 app.listen(port, () => {
-    // console.log('env: ', process.env)
-    console.log('env: ', process.env.password)
-    console.log('env: ', process.env.database)
     console.log(`App running on port: ${port}`)
 })
